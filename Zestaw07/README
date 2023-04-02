@@ -1,0 +1,22 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 10.01.2023
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 4 dotyczącego 
+prostych algorytmów sortowania:
+
+Zadanie 1
+Implementacja słownika z metodami takimi jak:
+*Konstruktor
+*clear();
+*bool insert(const Pair& p);
+*bool find(const K& k);
+*V& operator[](const K& k); 
+*bool erase(const K& k); 
+*int size();
+*bool empty();
+*void buckets();
+
+========================================================================
