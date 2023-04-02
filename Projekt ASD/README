@@ -1,0 +1,25 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 20.01.2023
+
+========================================================================
+
+Katalog zawiera pliki potrzbne do uruchomienia programu, w którym 
+zaimplementowany został słownik T9 z nakładką graficzną.
+
+Do zaimplementowania słownika wykorzystuję odmianę drzewa (z ang. trie),
+czyli drzewo przedrostkowe. 
+
+*Jak korzystać z programu?
+-przyciski z cyframi 1-9 pozwalają na wprowadzenie danych wejściowych
+-za pomocą przycisku # możemy zmienić wyświetlane słowa (jeśli program
+znalazł więcej niż jedno słowo)
+-przycisk * służy do skasowania wprowadzonych dotychczas znaków
+Program znajduje jednocześnie jedno słowo.
+
+*Jak uruchomić program?
+należy z poziomu katalogu "build" wykonać komendę make, która skompiluje
+nasz program a następnie uruchomić go za pomocą komendy make run lub
+"./t9"
+
+========================================================================
