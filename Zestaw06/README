@@ -1,0 +1,46 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 14.12.2022
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 4 dotyczącego 
+prostych algorytmów sortowania:
+
+Zadanie 1
+Implementacja drzewa przeszukiwania binarnego z metodami takimi jak:
+• insert(x)
+• search(x), searchRecursive(x)
+• size()
+• minimum()
+• maximum()
+• depth()
+• inorder(), preorder(), postorder() 
+
+========================================================================
+
+• Jakie operacje są relatywnie szybko wykonywane na drzewie BST, porównaj złożoności czasowe
+z innymi strukturami danych.
+    operacje search, insert ma złożoność pesymistyczną O(d), gdzie d to głębokość drzewa
+
+• Na czym polega iteracyjne przechodzenie drzewa bez użycia rekurencji?
+    1) Należy stworzyć pusty stos S
+    2) Obecny węzeł oznaczamy jako root
+    3) Obecny węzeł umieszczamy na stosie i ustawiamy obecny jako obecny->lewy aż będzie on 
+    wynosił null
+    4) Jeśli obecny to nullptr a stos jest pusty: 
+        a) Ściągamy element ze szczytu stosu i go wypisujemy
+        b) ustawiamy obecny jako wypisany->prawy 
+        c) wracamy do punktu trzeciego
+    5) Kończymy wypisywanie gdy stos jest pusty a obecny to nullptr
+
+• W jaki sposób można użyć drzewo BST do sortowania elementów? Wskaż podobieństwo do
+wcześniej poznanego algorytmu sortowania. Omów wady takiego rozwiązania.
+
+• Na czym polega przechodzenie drzewa preorder?
+
+• Na czym polega przechodzenie drzewa inorder? Jaka będzie kolejność wypisywanych elementów?
+
+• Na czym polega przechodzenie drzewa postorder?
+
+========================================================================
