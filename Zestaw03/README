@@ -1,0 +1,57 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 04.11.2022
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 3 dotyczącego 
+listy:
+
+Zadanie 1
+Zawiera implementację podwójnie wiązanej listy wskaźnikowej, która posiada:
+*funkcję push_front, wstawiającą element na początek listy
+*funkcję push_back, wstawiającą element na koniec listy
+*funkcję pop_front, usuwającą element z początku listy i zwracającą jego wartość
+*funkcję pop_back, usuwającą element z końca listy i zwracającą jego wartość
+*funkcję size() zwracającą liczbę elementów w liście
+*funkcję empty() sprawdzającą czy lista jest pusta
+*funkcję clear() usuwającą wszystkie elementy listy
+*funkcję find(int x) zwracającą pozycję pierwszego napotkanego elementu 
+o wartości x
+*funkcję erase(int i) usuwającą i zwracającą wartość elementu z pozycji i
+*funkcję insert(int i, int x) wstawiającą element x na pozycję i
+*funkcję remove(int x) usuwającą wszystkie elementy o wartości x i 
+zwracająca ile ich było
+
+Program LinkedList.cpp wczytuje dane ze standardowego wejścia i wypisuje
+dane na standardowe wyjście
+Dozwolone typy operacji to:
+• F x - wstaw liczbę 0 ≤ x ≤ 103 na początek listy (ang. front)
+• B x - wstaw liczbę 0 ≤ x ≤ 103 na koniec listy (ang. back)
+• f - usuń z listy pierwszy element i go wypisz, jeśli lista jest pusta wypisz “EMPTY”
+• b - usuń z listy ostatni element i go wypisz, jeśli lista jest pusta wypisz “EMPTY”
+• R x y - jeżeli x nie jest obecny w liście wypisz FALSE, w przeciwnym razie zastąp pierwsze
+wystąpienie wartości x przez y i wypisz TRUE (ang. replace)
+• S - wypisz rozmiar listy
+
+Zadanie 2
+Zawiera program Generator.cpp, który generuje losowe dane wejściowe dla 
+programu LinkedList.cpp
+
+========================================================================
+1. Jakie są zalety implementacji wskaźnikowej, a jakie implementacji tablicowej?
+Tablice przechowują  elementy w pamięci w sposób ciągły co oznacza, że mamy bezpośredni 
+dostęp do każdego z elementów jeśli znamy jego indeks.
+Oznacza to, że pobranie wartości każdego z elementów, niezależnie od tego gdzie się znajduje zajmie nam O(1)
+implementacja ta marnuje jednak dużą ilość pamięci, ponieważ tablicę 
+trzeba zainicjalizować z pewną wielkością, zwykle tworzymy większe tablice
+aby nie zabrakło nam miejsca-co skutkuje jednak zmarnowaniem zaalokowanej przestrzeni. 
+Co więcej użycie funkcji insert lub delete wiąże się z przesunięciem/zmianą indeksu wielu elementów 
+i funkcje te mają złożoność O(n)
+implementacja wskaźnikowa cechuje się lepszym wykorzystaniem pamięci,
+szybkim czasem dla insert() i delete(), wady tej implementacji to jednak
+wolny czas przeszukiwania
+
+2. Zastanowić się jak zaimplementować listę dwukierunkową zapamiętując tylko jeden wskaźnik?
+
+========================================================================
