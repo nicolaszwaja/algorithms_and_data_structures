@@ -1,0 +1,59 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 24.10.2022
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 1 dotyczącego stosu:
+
+Zadanie 1
+Zawiera implementację tablicową stosu, która posiada
+*konstruktor, przyjmujący za argument rozmiar stosu
+*metodę push, przyjmującą za argument element wstawiany na stos
+*metodę pop, usuwającą element ze stosu i zwracającą jego wartość
+*metodę size, która zwraca liczbę elementów na stosie
+*metodę empty sprawdzającą czy stos jest pusty
+
+Zadanie 2
+Zawiera implementację wskaźnikową stosu, o elementach takich opisane
+w przypadku zadania pierwszego
+
+Zadanie 3
+Program Stack wczytuje dane generowane przez Generator.cpp oraz wypisuje 
+wyniki działań na standardowe wyjście. Dzięki temu programowi możemy wykonać
+operacje A-położenie liczby na stosie, D-zdjęcie liczby ze stosu i wypisanie jej 
+oraz S-wypisanie liczby elementów na stosie
+
+Zadanie 4
+Program Generator losowo generuje dane dla programy Stack, wybiera najpierw
+liczbę operacji, a następnie jej typ (A/D/S), w przypadku wybrania typu A
+losuje również liczbę, którą Stack umieści na stosie
+
+Zadanie 5
+Program ONP za pomocą stosu zamienia wyrażenie arytmetyczne w zapisie klasycznym na
+odwrotną notację polską, wczytywane liczby przepisuje na wyjście, a operatory
+umieszczane są na stosie-zdejmujemy je dopiera, kiedy natrafimy na znak ")"
+
+========================================================================
+Co to jest stos?
+Liniowa struktura danych, w której dane dokładane są na wierzch stosu i z wierzchołka
+stosu są pobierane, taką kolejność możemy również opisać jako LIFO(last in first out)
+
+Omów przykłady zastosowania stosu?
+*cofanie zmian w edytorach: każda zmiana dokonana przez użytkownika względem 
+oryginalnego dokumentu jest notowana i odkładana na stos, a cofnięcie zmiany
+polega na ściągnięciu informacji o zmianie ze stosu i wykonaniu operacji przeciwnej.
+*obliczanie wyrażeń w ONP
+*konwersja z kodu NKB do dziesiętnego
+*sprawdzanie poprawności nawiasów ()
+
+Dlaczego operacja pop() z std::stack nie zwraca wartości elementu?
+ponieważ jest to funkcja typu void, w implementacji stdz:: stosu do pobrania 
+wartości elementu służy funkcja top()
+
+Dlaczego operacja pop() z std::stack nie zwraca referencji do elementu?
+
+Do czego służy funkcja std::queue::emplace?
+emplace wstawia nowy element na koniec kolejki
+
+========================================================================
