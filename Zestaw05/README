@@ -1,0 +1,50 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 04.12.2022
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 4 dotyczącego 
+prostych algorytmów sortowania:
+
+Zadanie 1
+W plikach BubbleSort.cpp, SelectionSort.cpp oraz InsertionSort.cpp
+znajdują się zaimlementowane przeze mnie trzy algorytmy sortowania,
+funkcja main programów wczytuje do wektora wartości liczb całkowitych, 
+sortuje je oraz wypisuje w kolejności niemalejącej na standardowe wyjście
+
+Czas sortowania został przeze mnie zmierzony za pomocą funkcji 
+biblioteki chrono oraz przedstawiony graficznie na wykresach stworzonych 
+w programie gnuplot.
+
+Czas pracy algorytmów został przedstawiony:
+- dla bubblesort w kolorze niebieskim
+- dla insertionsort w kolorze czerwonym
+- dla selectionsort w kolorze zielonym
+
+Zadanie 2
+W tym zadaniu należało zmodyfikować program tak, aby policzył złożoność
+obliczeniową wybranego programu z powyższego zadania oraz porównać liczbę
+wykonanych operacji z oszacowanymi przez siebie wartościami złożoności 
+obliczeniowej pesymistycznej, średniej i optymistycznej.
+
+Złożoność oszacowana dla bubbleSort:
+*optymistyczna = O(n) jeśli otrzymany na wejściu wektor zawiera 
+posortowane wartości i należy jedynie wykonać n operacji
+*pesymistyczna = O(n^2), a dokładnie wykonujemy (n^2-n)/2 operacji
+*średnia = O(n^2), bez udowadniania matematycznie możemy założyć, że
+średnio ok. połowa elementów będzie wymagała zamiany, a reszta będzie na 
+odpowiedniej pozycji co daje nam ok. (n^2-n)/4 operacji
+
+Moje wyniki:
+*optymistyczna: dla n danych posortowanych, program wykonuje n-1 operacji
+*pesymistyczna: dla n danych posortowanych malejąco, niecałe n^2 operacji
+*średnia: dla danych z generatora, program wykonuje niecałe n^2, mniej niż
+dla takiej samej liczby danych podanej w kolejności malejącej
+
+Zadanie 3
+Generator przyjmuje dwa argumenty: n-ilość generowanych liczb oraz max-
+wyznaczającą zakres losowania liczb(od 1 do max)
+Wygenerowane dane są wypisywane na standardowe wyjście.
+
+========================================================================

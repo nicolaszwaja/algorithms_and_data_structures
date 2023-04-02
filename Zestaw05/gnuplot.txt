@@ -1,0 +1,24 @@
+
+
+set style line 1 \
+    linecolor rgb '#0060ad' \ 
+    linetype 1 linewidth 2 \
+    pointtype 7 pointsize 1.5
+set style line 2 \
+    linecolor rgb '#dd181f' \
+    linetype 1 linewidth 2 \
+    pointtype 5 pointsize 1.5
+set style line 3 \
+    linecolor rgb '#326647' \
+    linetype 1 linewidth 2 \
+    pointtype 5 pointsize 1.5
+
+unset key
+set xlabel 'czas(s)'
+set ylabel 'liczba danych liczb'    
+
+plot 'pomiary.txt' index 0 with linespoints linestyle 1 title 'bubbleSort', \
+     ''            index 1 with linespoints linestyle 2 title 'insertionSort',\
+     ''            index 2 with linespoints linestyle 3 title 'selectionSort'
+
+niebieski bubble,czerwony insertion,zielony selection
