@@ -1,0 +1,44 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 24.10.2022
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia 2 dotyczącego 
+kolejki:
+
+Zadanie 1
+Zawiera implementację tablicową kolejki, która posiada:
+*domyślny konstruktor
+*konstruktor, który jako argument przyjmuje rozmiar tablicy
+*funkcję push, wstawiającą element do kolejki
+*funkcję pop, usuwającą element z kolejki i zwracającą jego wartość
+*funkcję size() zwracającą liczbę elementów w kolejce
+*funkcję empty() sprawdzającą czy kolejka jest pusta
+
+Zadanie 2
+Zawiera implementację wskaźnikową kolejki, o elementach takich opisane
+w przypadku zadania pierwszego
+
+Zadanie 3
+Program Queue wczytuje dane generowane przez Generator.cpp z poprzedniego zestawu
+oraz wypisuje wyniki działań na standardowe wyjście. Dzięki temu programowi możemy 
+wykonać operacje A-umieszczenie liczby w kolejce, D-zdjęcie liczby z kolejki i 
+wypisanie jej oraz S-wypisanie liczby elementów w kolejce
+
+Zadanie 4
+Program implementuje algorytm sortowania pozycyjnego przy użyciu tablicy 10
+kolejek, funkcja radix(vector<int>& v) sortuje w kolejności rosnącej liczby
+zapisane w wektorze. 
+
+========================================================================
+• Opisz trzy sposoby obsługi cykliczności bufora.
+1.
+
+• Omów przykłady zastosowania kolejki?
+
+• Co oznaczają akronimy LIFO i FIFO?
+LIFO=last in first out, odnosi się do kolejności obsługi elementów stosu
+FIFO=first in fisrt out, odnosi się do kolejności obsługi el. kolejki
+
+========================================================================
