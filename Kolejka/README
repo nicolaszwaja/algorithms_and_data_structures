@@ -1,0 +1,27 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 02.04.2023
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia dotyczącego 
+kolejki priorytetowej:
+
+Plik Set.hpp zawiera implementację priority queue stworzonej na bazie kopca
+zawiera ona:
+*funkcję insert(obj, priority)
+*funkcję max(), która zwraca obiekt o największym priorytecie w kolejce nie 
+usuwając go
+*funkcję extractMax(), która usuwa z kolejki i zwraca obiekt o największym 
+priorytecie
+
+Program PQueue.cpp wczytuje dane ze standardowego wejścia i wypisuje dane na 
+standardowe wyjście, operuje na kolejce przechowującej stringi.
+
+Dozwolone typy operacji to:
+• i obj pr - wstaw do kolejki string obj o priorytecie pr
+• m - wypisz obiekt o najwiekszym priorytecie bez usuwania go z kolejki
+• e - usuń i wypisz obiekt o najwiekszym priorytecie z kolejki
+• p - wypisz zawartość kolejki
+
+========================================================================
