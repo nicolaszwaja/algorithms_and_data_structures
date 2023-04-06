@@ -1,0 +1,29 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 19.03.2023
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia dotyczącego 
+zbioru:
+
+Plik Set.hpp zawiera implementację zbioru stworzonego na bazie tablicy uporządkowanej
+zawiera on:
+*funkcję insert, wstawiającą element na odpowiednie miejsce w tablicy
+*funkcję pop, usuwającą element i zwracającą jego wartość
+*funkcję remove, usuwającą wybrany element
+*funkcję size() zwracającą liczbę elementów w zbiorze
+*funkcję empty() sprawdzającą czy zbiór jest pusty
+*funkcję isMember, sprawdzającą czy dany elemenr=t należy do zbioru
+*trzy funkcje umożliwiające operacje na zbiorach intersection, difference, unionn
+
+Program Set.cpp wczytuje dane ze standardowego wejścia i wypisujedane na standardowe wyjście
+Dozwolone typy operacji to:
+• i x - wstaw liczbę x do zbioru
+• p - usuń ze zbioru ostatni element i go wypisz, jeśli zbiór jest pusty wypisz “EMPTY”
+• r x  -  usuń ze zbioru element x, jeśli zbiór jest pusty wypisz “EMPTY”
+• s - wypisz rozmiar zbioru
+• P - wypisuje zawartość zbioru
+• I, U, D - pozwala przetestować operacje na zbiorach dla przykładowego zbioru {1,3,5}
+
+========================================================================
