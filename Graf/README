@@ -1,0 +1,30 @@
+========================================================================
+
+Autor: Nicola Szwaja                              Krakow, 02.04.2023
+
+========================================================================
+
+Katalog zawiera programy stworzone wg poleceń ćwiczenia dotyczącego 
+grafów:
+
+Plik Graph.hpp zawiera implementację grafu stworzonego na bazie macierzy
+sąsiedztwa, zawiera on:
+*funkcję addEdge() dodającą do grafu krawędź między podanymi wierzchołkami
+*funkcję removeEdge(), która usuwa z grafu krawędź między podanymi 
+ wierzchołkami
+*funkcję hasEdge(), która sprawdza czy między podanymi wierzchołkami istnieje
+ krawędź
+*funkcje inConnections(), outConnections() oraz allConnections(), dzięki
+ którym można otrzymać zbiór wierzchołków z których i do których można dostać
+ się z danego wierchołka
+
+Program Graph.cpp wczytuje dane ze standardowego wejścia i wypisuje dane na 
+standardowe wyjście, operuje na grafie zawierającym 20 wierzchołków.
+
+Dozwolone typy operacji to:
+• a w1 w2 - dodaj krawędź między w1 i w2
+• r w1 w2 - usuń krawędź między w1 i w2
+• e w1 w2 - sprawdź czy krawędź między w1 i w2 istnieje
+• A w - wypisz wszystkie wierzchołki połączone z w
+
+========================================================================
